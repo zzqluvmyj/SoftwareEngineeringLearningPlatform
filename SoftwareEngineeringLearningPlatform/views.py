@@ -1,4 +1,10 @@
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response,render
+from django.contrib.auth.decorators import login_required
 def home(request): 
     context={}
     return render_to_response('index.html',context)
+
+#登录成功后显示的页面
+@login_required
+def after_login(request):
+    return render(request, 'index.html')
