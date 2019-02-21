@@ -8,4 +8,3 @@ for item in data:
     print(item['cc']['name'])
     n=n+1
 print(n)
-

@@ -1,3 +1,9 @@
 .nav-link {
     font-size: 18px;
   }
+.active {
+  font-size: 30px !important;
+}
+p {
+  font-size: 30px !important;
+}
